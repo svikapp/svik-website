@@ -349,7 +349,7 @@ header {
       margin-top: 100px;
     }
   }
-  @media only screen and (min-device-width: 640px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media only screen and (min-device-width: 640px) {
     .main-section {
       height: 100vh;
       display: flex;
