@@ -343,8 +343,9 @@ body {
     text-decoration: none;
   }
 
-  header {
-    background-color: rgba(0, 0, 0, 0.5);
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .main-section {
+    height: 100vh;
     display: flex;
     align-items: center;
     height: 100px;
