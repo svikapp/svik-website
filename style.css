@@ -86,7 +86,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 900px;
+  padding-top: 120vh;
 }
 
 .svik-logo {
@@ -257,7 +257,33 @@ header {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 3840px) {
+.main-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120vh;
+}
+
+body {
+  background-image: url("images/round.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1000px;
+}
+
+.svik-logo-container {
+  margin-top: 100px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
   .main-section {
     height: 100vh;
     display: flex;
@@ -286,14 +312,15 @@ header {
 }
 
 /* For mobile phones */
-@media screen and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .main-section {
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 260px;
+    /* margin-top: 260px; */
+    margin-top: 100%;
   }
 
   body {
@@ -315,63 +342,38 @@ header {
     font-weight: bold;
     text-decoration: none;
   }
-}
 
-@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-  .main-section {
-    height: 100vh;
+  header {
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding-top: 350vh;
+    height: 100px;
+    padding: 0.6rem;
+    position: fixed;
+    font-family: "Roboto Slab", serif;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    /* z-index: 1; */
   }
 
-  body {
-    background-image: url("images/round.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .logo {
+    height: 40px;
+    margin-right: 10px;
   }
-
-  .svik-logo-container {
-    margin-top: 100px;
-  }
-}
-
-@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 2) {
-  .main-section {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 90%;
-  }
-
-  body {
-    background-image: url("images/round.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .svik-logo-container {
-    margin-top: 100px;
+  
+  .svik-text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+    letter-spacing: 2px;
   }
 }
 
-@media only screen and (min-device-width: 640px) {
+
+
+/* @media only screen and (min-device-width: 640px) {
   .main-section {
     height: 100vh;
     display: flex;
@@ -396,16 +398,16 @@ header {
   .svik-logo-container {
     margin-top: 100px;
   }
-}
+} */
 
-@media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) {
+@media (min-width: 1025px) and (max-width: 1200px) {
   .main-section {
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 350vh;
+    padding-top: 120vh;
   }
 
   body {
@@ -418,12 +420,14 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 1000px;
   }
 
   .svik-logo-container {
     margin-top: 100px;
   }
 }
+
 
 .centered {
   display: flex;
@@ -502,10 +506,11 @@ header {
 
 .wrap img {
   display: block;
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
+  /* max-width: 100%;
+  max-height: 100%; */
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
   transition: transform 0.5s ease;
 }
 
